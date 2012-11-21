@@ -1,0 +1,44 @@
+#demoButtons{
+	float:left;
+	display: block;
+	position: relative;
+	width:180px;
+	margin:10px;
+
+}
+
+#demoButtons button{
+	display: block;
+	position: relative;
+	clear:left;
+	width:150px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:3px;
+
+}
+
+.centerCol{
+	float:left;
+	position: relative;
+	display: block;
+	width:300px;
+}
+#block{
+	display: block;
+	position: relative;
+	height:80px;
+	width:300px;
+	background-color: blue;
+}
+
+
+.rightCol{
+	float:left;
+	display: block;
+	position: relative;
+	clear:left;
+}
+#code ul {
+	list-style: none;
+}

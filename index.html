@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<title>
+Crescent Fresh
+</title>
+
+<!-- Style -->
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen">
+
+<!-- JavaScript -->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/5sec-snow.js" type="text/javascript"></script>
+
+</head>
+
+
+<body>
+<div class="hero-unit">
+	<h1>Crescent Fresh</h1>
+	<h3>&nbsp;&nbsp;&nbsp;Demos and things, plus the code</h3>
+</div>
+
+<div class="leftCol">
+	<div id="demoButtons">
+
+		<button class="btn" id="hide500">Hide(500)</button>
+
+		<button class="btn" id="show500">Show(500)</button>
+
+		<!-- <button class="btn" id="RevFromBot">Reveal From Bottom</button> -->
+
+		<button class="btn" id="RevFromTop">Reveal From Top</button>
+
+		<button class="btn" id="RevFromLeft">Reveal from Left</button>
+
+		<button class="btn" id="RevFromRight">Reveal from Right</button>
+
+		
+
+		<button class="btn" id="snow">Snow!</button>
+	</div>
+</div>
+
+<div class='centerCol'>
+	<div id="block"></div>
+</div>
+
+
+<div class="rightCol">
+	<div id="code">
+
+	<ul>
+		
+
+		<li id="hide500Code">
+			<p>$('#block').hide(500);</p>
+		</li>
+
+		<li id="show500Code">
+			<p>$('#block').show(500);</p>
+		</li>
+
+		<li id="slideDown">
+			<p>alert('hide clicked');</p>
+		</li>
+
+		<li id="RevFromTopCode">
+			<p>$('#block').hide();<br/>
+		$('#block').css({'height':'0','float':'left'});<br/>
+		$('#block').show();<br/>
+		$('#block').animate({'height':'80px'}, 500);</p>
+		</li>
+
+		<li id="RevFromLeftCode">
+			<p>$('#block').hide();<br/>
+		$('#block').css({'width':'0','float':'left'});<br/>
+		$('#block').show();<br/>
+		$('#block').animate({'width':'300px'}, 500);</p>
+		</li>
+
+		<li id="RevFromRightCode">
+			<p>$('#block').hide();<br/>
+		$('#block').css({'width':'0','float':'right'});<br/>
+		$('#block').show();<br/>
+		$('#block').animate({'width':'300px'}, 500);</p>
+		</li>
+
+		<li id="snowCode">
+			<p>alert('snow clicked');</p>
+		</li>
+	</ul>
+
+	</div>
+</div>
+
+</body>
