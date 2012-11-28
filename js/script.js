@@ -78,7 +78,7 @@ $(document).ready(function(){
   	});
 
 	$('#demoButtons button').click(function(){
-		$('.parallaxBlock').hide();
+		$('.parallax').hide();
 
 		showCode(this);
 	});
