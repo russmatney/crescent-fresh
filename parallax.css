@@ -1,0 +1,29 @@
+
+
+.pBlock{
+	height:100px;
+	width:270px;
+	background-color: #880000;
+	z-index: 1;
+}
+
+.front{
+	background-color: #008800;
+	top:40px;
+	height:80px;
+	width:220px;
+	z-index: 2;
+}
+
+.parallax-viewport { 
+	position:relative; 
+	overflow:hidden;
+	width:900px;
+	height:500px;
+	border:white solid 1px;
+}
+
+.parallax-layer{
+	position: absolute;
+}
+

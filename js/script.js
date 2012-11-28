@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('#code ul li').hide();
 
 	$('#hide500').click(function(){
+		$('#block').show();
 		$('#block').hide(500);
 
 	});
@@ -35,8 +36,6 @@ $(document).ready(function(){
 
 	$('#RevFromRight').click(function(){
 
-		$.snow();
-
 		$('#block').hide();
 		$('#block').css({'width':'0','float':'right'});
 		$('#block').show();
@@ -62,7 +61,25 @@ $(document).ready(function(){
   	
   	});
 
+  	$('#ashes').click(function(){
+		
+    	$.snow({
+    		flake_number: 100,
+            flake_folder: 'js/big-24/',
+            flake_imgs: 5,
+            linked_flakes: 0,
+            link: '',
+            melt: 450,
+            wind: 70,
+            rotation: 5,
+            speed: 10
+        });
+  	
+  	});
+
 	$('#demoButtons button').click(function(){
+		$('.parallaxBlock').hide();
+
 		showCode(this);
 	});
 
