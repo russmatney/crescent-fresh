@@ -44,41 +44,27 @@ $(document).ready(function(){
 	});
 
 
+	var snowOn = false;
 
 	$('#snow').click(function(){
-		
-    	$.snow({
-    		flake_number: 100,
-            flake_folder: 'js/big-24/',
-            flake_imgs: 5,
-            linked_flakes: 0,
-            link: '',
-            melt: 450,
-            wind: 70,
-            rotation: 5,
-            speed: 10
-        });
-  	
-  	});
-
-  	$('#ashes').click(function(){
-		
-    	$.snow({
-    		flake_number: 100,
-            flake_folder: 'js/big-24/',
-            flake_imgs: 5,
-            linked_flakes: 0,
-            link: '',
-            melt: 450,
-            wind: 70,
-            rotation: 5,
-            speed: 10
-        });
-  	
+		if(snowOn === false) {
+			snowPlease(true);
+        	snowOn = true;
+		} else {
+			snowOn = false;
+		} 
   	});
 
 	$('#demoButtons button').click(function(){
 		$('.parallax').hide();
+
+		$.snow({
+    		flake_number: 0
+    	});
+
+    	snowPlease(false);
+
+
 
 		showCode(this);
 	});
@@ -91,4 +77,24 @@ var showCode = function(e){
 	var b = '' + a + 'Code';
 	$('#code ul li').hide();
 	$('#'+b+'').show();	
+};
+
+var snowPlease = function(snowNow){
+	if(snowNow === true) {
+		$.snow({
+    		flake_number: 100,
+            flake_folder: 'js/big-24/',
+            flake_imgs: 5,
+            linked_flakes: 0,
+            link: '',
+            melt: 450,
+            wind: 70,
+            rotation: 5,
+            speed: 10
+    	});
+	} else {
+		$.snow({
+    		flake_number: 0
+    	});
+	}
 };
