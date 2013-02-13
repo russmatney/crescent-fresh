@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %title Backbone Hangman
+    %meta{:name => "description", :content => "A simple application that demonstrates usage of Backbone JS"}
+    %meta{:name => "author", :content => "Tri Vuong"}
+    = stylesheet_link_tag     "http://fonts.googleapis.com/css?family=Montserrat",
+                              "css/hangman.css"
+    = javascript_include_tag  "javascripts/jquery.js",
+                              "javascripts/underscore.js", 
+                              "javascripts/backbone.js",
+                              "javascripts/handlebars.js",
+                              "javascripts/i18n.js",
+                              "javascripts/models/game.js",
+                              "javascripts/views/optionsView.js",
+                              "javascripts/views/charactersView.js",
+                              "javascripts/views/wordView.js",
+                              "javascripts/views/hangmanView.js",
+                              "javascripts/views/answerView.js",
+                              "javascripts/views/stageView.js",
+                              "javascripts/hangman.js"
+  %body
+
+    = haml :forkme
+
+    #stage
+      = haml :west
+      = haml :east
+
+    = haml :footer
+
+    = erb :templates
